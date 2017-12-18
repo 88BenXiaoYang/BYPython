@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import urllib
@@ -82,8 +83,7 @@ class QSBK:
 			if inputStr == 'q':
 				self.enable = False
 				return
-			print u"第%d页\t发布人:%s\t发布时间:%s\n%s\n赞:%s\n" %(page,story[0],story[1],story[2],story[3])
-
+			print u"第%d页\t发布人:%s\t发布时间:%s\n%s\n赞:%s\n" % (page,story[0],story[1],story[2],story[3])
 
 	def start(self):
 		print 'reading QB, q to exit'

@@ -1,4 +1,3 @@
-#参考资料：http://cuiqingcai.com/993.html
 # -*- coding:utf-8 -*-
 import urllib
 import urllib2
@@ -108,18 +107,20 @@ class BDTB:
         else:
             print 'get content fail !!!' 
 
+'''
 print u"请输入帖子代号"
 baseURL = 'http://tieba.baidu.com/p/' + str(raw_input(u'http://tieba.baidu.com/p/'))
 seeLZ = raw_input("是否只获取楼主发言，是输入1，否输入0\n")
 floorTag = raw_input("是否写入楼层信息，是输入1，否输入0\n")
 bdtb = BDTB(baseURL,seeLZ,floorTag)
+'''
 
-"""
 baseURL = 'http://tieba.baidu.com/p/3138733512'
-contentFile = 'content.txt'
+contentFile = 'tp.txt'
 bdtb = BDTB(baseURL,1,contentFile)
 # bdtb.getPage(1)
 # bdtb.getTitle()
 # bdtb.getPageNum()
 bdtb.getContent()
-"""
+
+#参考资料：http://cuiqingcai.com/993.html
