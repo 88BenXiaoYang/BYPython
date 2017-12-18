@@ -85,17 +85,17 @@ class QSBK:
 			print u"第%d页\t发布人:%s\t发布时间:%s\n%s\n赞:%s\n" %(page,story[0],story[1],story[2],story[3])
 
 
-    def start(self):
-    	print 'reading QB, q to exit'
-    	self.enable = True
-    	self.loadPage()
-    	nowPage = 0
-    	while self.enable:
-    		if len(self.storise) > 0:
-    			pageStories = self.storise[0]
-    			nowPage += 1
-    			del self.storise[0]
-    			self.getOneStory(pageStories, nowPage)
+	def start(self):
+		print 'reading QB, q to exit'
+		self.enable = True
+		self.loadPage()
+		nowPage = 0
+		while self.enable:
+			if len(self.storise) > 0:
+				pageStories = self.storise[0]
+				nowPage += 1
+				del self.storise[0]
+				self.getOneStory(pageStories, nowPage)
 
 url = 'http://www.qiushibaike.com/hot/page/'
 qsbk = QSBK(url)
